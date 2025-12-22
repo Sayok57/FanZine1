@@ -181,6 +181,9 @@ body{
         font-style: italic;
     }
 }
+.mobile-block-quote{
+    display: none;
+}
 .block-quote:hover{
     animation: block-quotes 0.5s ease-in-out forwards;
 }
@@ -485,7 +488,8 @@ body{
     justify-content: space-between;
     width: 1425px;
     height: 525px;
-    background-image: url(../assets/images/Background\ last.svg);
+    background-image: url(../assets/images/Background\ last.svg), url(../assets/images/bg\ dots.png);
+     
 }
 .redHand{
     position: absolute;
@@ -578,8 +582,14 @@ body{
     background: black;
     display: flex;
     flex-direction: row;
-    padding-top: 67px;
-    justify-content: space-evenly;
+    padding-top: 52px;
+    padding-left: 46px;
+    padding-right: 46px;
+    padding-bottom: 52px;
+}
+.footer-text{
+    display: flex;
+    justify-content: space-between;
     gap: 173px;
     h4{
         color: white;
@@ -589,6 +599,260 @@ body{
         color: white;
         font-size: 48px;
     }
+}
+/* АДАПТИВЫ */
+/*1920x1080*/
+@media(min-width: 1441px) and (max-width: 1920px){
+body{
+    width: 100%
+}
+.screen1{
+    width: 1920px;
+}
+.screen2{
+    width: 1920px;
+}
+.screen3{
+    width: 1920px;
+}
+.screen4{
+    width: 1920px;
+}
+.sub-screen4{
+    width: 1920px;
+    background-size: 110%;
+}
+.footer{
+    width: 1920px;
+}
+.strip1{
+    justify-content: center;
+}
+.strip2{
+    justify-content: center;
+}
+.strip3{
+    justify-content: center;
+}
+.loading-bar{
+    justify-content: center;
+    background-size: 120%;
+}
+.block1{
+    width: 100%;
+}
+.block3{
+    width: 640px;
+}
+.block4{
+    width: 640px;
+}
+.block5{
+    width: 640px;
+}
+.rect1, .rect2, .rect3{
+    width: 70px;
+}
+}
+/*1280x800*/
+@media(max-width: 1280px){
+body{
+    width: 100%
+}
+.screen1{
+    width: 1280px;
+}
+.screen2{
+    width: 1280px;
+}
+.screen3{
+    width: 1280px;
+}
+.screen4{
+    width: 1280px;
+}
+.sub-screen4{
+    width: 1280px;
+    background-size: 110%;
+}
+.footer{
+    width: 1280px;
+}
+.strip1{
+    justify-content: center;
+}
+.strip2{
+    justify-content: center;
+}
+.strip3{
+    
+}
+.loading-bar{
+    background-size: 110%;
+    gap: 150px;
+}
+.block1{
+    width: 100%;
+}
+.block2{
+    gap: 20px;
+}
+.block3{
+    width: 426px;
+}
+.block4{
+    width: 426px;
+}
+.block5{
+    width: 426px;
+}
+.rect1, .rect2, .rect3{
+    width: 45px;
+}
+.footer-text{
+    h3{
+        font-size: 45px;
+    }
+}
+
+}
+/*768x1024*/
+@media(max-width: 768px){
+body{
+    width: 100%
+}
+.screen1{
+    width: 768px;  
+}
+.screen2{
+    width: 768px;
+}
+.screen3{
+    width: 768px;
+}
+.screen4{
+    width: 768px;
+}
+.sub-screen4{
+    width: 768px;
+    background-size: 110%;
+}
+.footer{
+    width: 768px;
+}
+.strip1{
+    justify-content: center;
+}
+.strip2{
+    justify-content: center;
+}
+.strip3{
+    
+}
+.loading-bar{
+    justify-content: center;
+    background-size: 150%;
+    gap: 5px;
+}
+.block1{
+    width: 100%;
+}
+.block2{
+    gap: 20px;
+}
+.block-quote{
+    display: none;
+}
+.mobile-block-quote{
+    display: inherit;
+    display: flex;
+    flex-direction: column;
+    width: 228px;
+    height: 314px;
+    background-color: black;
+    border-radius: 20px;    
+    cursor: pointer;
+    p{
+        font-size: 10px;
+        color: white;
+        padding-left: 45px;
+        padding-top: 101px;
+    }
+    h3{
+        width: 220px;
+        padding-left: 45px;
+        font-size: 16px;
+        color: white;
+        font-style: italic;
+    }
+}
+.mobile-block-quote:target{
+    animation: block-quotes 0.5s ease-in-out forwards; 
+}
+.block3{
+    width: 256px;
+}
+.block4{
+    width: 256px;
+}
+.block5{
+    width: 256px;
+}
+.rect1, .rect2, .rect3{
+    width: 20px;
+    h3{
+        font-size: 20px;
+    }
+}
+.basket{
+    transform: scale(0.5);
+}
+.ball{
+    transform: scale(0.5);
+}
+@keyframes basket{
+    from{
+        transform: scale(0.5) translateX();
+    }
+    25%{
+        transform:  scale(0.5) translateX(40px);
+    }
+    50%{
+        transform:  scale(0.5) translateX();
+    }
+    75%{
+        transform: scale(0.5) translateX(-40px);
+    }
+    100%{
+        transform: scale(0.5) translateX();
+    }
+}
+@keyframes ball{
+    from{
+        transform:scale(0.5) translateY();
+        opacity: 0;
+
+    }
+    30%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0;
+    }
+    to{
+        transform:scale(0.5) translateY(1200px);
+        opacity: 0;
+    }
+}
+.footer-text{
+    gap: 20px;
+    h3{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 20px;
+    }
+}
 }
 
 
