@@ -684,9 +684,6 @@ body{
 .strip2{
     justify-content: center;
 }
-.strip3{
-    
-}
 .loading-bar{
     background-size: 110%;
     gap: 150px;
@@ -745,10 +742,7 @@ body{
 }
 .strip2{
     justify-content: center;
-}
-.strip3{
-    
-}
+}   
 .loading-bar{
     justify-content: center;
     background-size: 150%;
