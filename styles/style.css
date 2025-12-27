@@ -848,6 +848,141 @@ body{
     }
 }
 }
+/* 320x475 */
+@media(max-width: 320px){
+body{
+    width: 100%
+}
+.screen1{
+    width: 768px;  
+}
+.screen2{
+    width: 768px;
+}
+.screen3{
+    width: 768px;
+}
+.screen4{
+    width: 768px;
+}
+.sub-screen4{
+    width: 768px;
+    background-size: 110%;
+}
+.footer{
+    width: 768px;
+}
+.strip1{
+    justify-content: center;
+}
+.strip2{
+    justify-content: center;
+}   
+.loading-bar{
+    justify-content: center;
+    background-size: 150%;
+    gap: 5px;
+}
+.block1{
+    width: 100%;
+}
+.block2{
+    gap: 20px;
+}
+.block-quote{
+    display: none;
+}
+.mobile-block-quote{
+    display: inherit;
+    display: flex;
+    flex-direction: column;
+    width: 228px;
+    height: 314px;
+    background-color: black;
+    border-radius: 20px;    
+    cursor: pointer;
+    p{
+        font-size: 10px;
+        color: white;
+        padding-left: 45px;
+        padding-top: 101px;
+    }
+    h3{
+        width: 220px;
+        padding-left: 45px;
+        font-size: 16px;
+        color: white;
+        font-style: italic;
+    }
+}
+.mobile-block-quote:target{
+    animation: block-quotes 0.5s ease-in-out forwards; 
+}
+.block3{
+    width: 256px;
+}
+.block4{
+    width: 256px;
+}
+.block5{
+    width: 256px;
+}
+.rect1, .rect2, .rect3{
+    width: 20px;
+    h3{
+        font-size: 20px;
+    }
+}
+.basket{
+    transform: scale(0.5);
+}
+.ball{
+    transform: scale(0.5);
+}
+@keyframes basket{
+    from{
+        transform: scale(0.5) translateX();
+    }
+    25%{
+        transform:  scale(0.5) translateX(40px);
+    }
+    50%{
+        transform:  scale(0.5) translateX();
+    }
+    75%{
+        transform: scale(0.5) translateX(-40px);
+    }
+    100%{
+        transform: scale(0.5) translateX();
+    }
+}
+@keyframes ball{
+    from{
+        transform:scale(0.5) translateY();
+        opacity: 0;
+
+    }
+    30%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0;
+    }
+    to{
+        transform:scale(0.5) translateY(1200px);
+        opacity: 0;
+    }
+}
+.footer-text{
+    gap: 20px;
+    h3{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 20px;
+    }
+}
+}
 
 
 
