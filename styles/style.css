@@ -854,23 +854,23 @@ body{
     width: 100%
 }
 .screen1{
-    width: 768px;  
+    width: 320px;  
 }
 .screen2{
-    width: 768px;
+    width: 320px;
 }
 .screen3{
-    width: 768px;
+    width: 320px;
 }
 .screen4{
-    width: 768px;
+    width: 320px;
 }
 .sub-screen4{
-    width: 768px;
+    width: 320px;
     background-size: 110%;
 }
 .footer{
-    width: 768px;
+    width: 320px;
 }
 .strip1{
     justify-content: center;
