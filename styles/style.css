@@ -714,7 +714,7 @@ body{
 
 }
 /*768x1024*/
-@media(max-width: 768px) and (min-width:400px){
+@media(max-width: 768px){
 body{
     width: 100%
 }
@@ -849,28 +849,29 @@ body{
 }
 }
 /* 320x475 */
-@media(max-width: 320px){
+@media(max-width: 393px){
+    @media(max-width: 768px){
 body{
     width: 100%
 }
 .screen1{
-    width: 320px;  
+    width: 393px;  
 }
 .screen2{
-    width: 320px;
+    width: 393px;
 }
 .screen3{
-    width: 320px;
+    width: 393px;
 }
 .screen4{
-    width: 320px;
+    width: 393px;
 }
 .sub-screen4{
-    width: 320px;
+    width: 393px;
     background-size: 110%;
 }
 .footer{
-    width: 320px;
+    width: 393px;
 }
 .strip1{
     justify-content: center;
@@ -885,6 +886,12 @@ body{
 }
 .block1{
     width: 100%;
+}
+.logo{
+    width: 393px;
+}
+.loading-bar{
+    display: none;
 }
 .block2{
     gap: 20px;
@@ -919,18 +926,29 @@ body{
     animation: block-quotes 0.5s ease-in-out forwards; 
 }
 .block3{
-    width: 256px;
+    width: 131px;
 }
 .block4{
-    width: 256px;
+    width: 131px;
 }
 .block5{
-    width: 256px;
+    width: 131px;
 }
-.rect1, .rect2, .rect3{
-    width: 20px;
+.block5-title{
     h3{
         font-size: 20px;
+    }
+    p{
+        font-size: 10px;
+    }
+}
+.arrow{
+    transform: scale(0.5);
+}
+.rect1, .rect2, .rect3{
+    width: 40px;
+    h3{
+        display: none;
     }
 }
 .basket{
@@ -973,13 +991,16 @@ body{
         opacity: 0;
     }
 }
+.footer{
+    height: 100px;
+}
 .footer-text{
     gap: 20px;
     h3{
-        font-size: 30px;
+        font-size: 10px;
     }
     h4{
-        font-size: 20px;
+        font-size: 5px;
     }
 }
 }
@@ -990,3 +1011,4 @@ body{
 
 
 
+}
